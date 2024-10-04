@@ -1,0 +1,32 @@
+/* Footer container styling */
+.footer {
+    background-color: #2c3e50; /* Dark blue background */
+    color: white; /* White text */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Styling for the paragraph inside the footer */
+  .footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Ensure the footer is sticky at the bottom of the page */
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* Make sure the footer looks good on mobile */
+  @media (max-width: 768px) {
+    .footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
