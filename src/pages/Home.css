@@ -1,0 +1,51 @@
+/* Container for the home section */
+.home {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Style for the welcome message */
+  .home h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  /* Card container to display cards in a flexbox layout */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift the card when hovered */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  
