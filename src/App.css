@@ -1,42 +1,198 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up a basic font and background color for the app */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Container for the app */
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+}
+/* Styling for the header container */
+.header-container {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  margin-top: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  background-color: #34495e;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Header styling */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for the list section */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Task item name and delete button */
+ul li span {
+  font-size: 16px;
+  color: #333;
+}
+
+ul li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+ul li button:hover {
+  background-color: #c0392b;
+}
+
+/* Form for adding tasks */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+form input, form select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Link styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 20px;
+  display: block;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+a:hover {
+  text-decoration: underline;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  form input, form select, form button {
+    width: 100%;
+    margin-bottom: 10px;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
